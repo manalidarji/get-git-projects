@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import ProjectsLists from "../components/ProjectComp/ProjectsLists";
+import ProjectsLists from "../components/Projects/ProjectsLists";
 import Footer from "../components/Footer";
 
 const ProjectListsPage = () => {

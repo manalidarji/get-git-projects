@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ProjectItem from "../Projects/ProjectItem";
+import ProjectItem from "./ProjectItem";
 
 const ProjectsLists = () => {
 	// 2 hardcoded username samples foe testing purposes
