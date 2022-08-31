@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import ProjectCommitItem from '../Commits/ProjectCommitItem';
 
 const ProjectCommitsLists = (props) => {
@@ -21,12 +20,14 @@ const ProjectCommitsLists = (props) => {
 	}, [COMMITS_API_URL]);
   return (
     <div>
+      <ul className="list-group list-group-flush">
         {commits.map(commit => (
           <ProjectCommitItem
             key = {commit.sha}
             commit = {commit}
           />
         ))}
+      </ul>
     </div>
   )
 }
