@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 const ProjectItem = (props) => {
     const repo = props.repo;
   return (
-    <div>{repo.name}</div>
+    <div>
+        <Link to={`projects/${repo.name}`}>{repo.name}</Link>
+    </div>
   )
 }
 

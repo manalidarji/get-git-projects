@@ -1,19 +1,20 @@
+// common css
 import "../assets/css/App.css";
-import Footer from "./Footer";
-import Header from "./Header";
-import ProjectsLists from "./ProjectsLists";
+// router components
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// pages
+import ProjectListsPage from "../pages/ProjectListsPage";
+import ProjectDetailPage from "../pages/ProjectDetailPage";
+
 
 function App() {
   return (
-    <>
-      <Header />
-      <div id="main">
-        <div className="container">
-          <ProjectsLists />
-        </div>
-      </div>
-      <Footer />
-    </>
+    <BrowserRouter>
+			<Routes>
+				<Route path='/' element={<ProjectListsPage />} />
+        <Route path='/projects/:name' element={<ProjectDetailPage />} />
+			</Routes>
+		</BrowserRouter>
   );
 }
 
