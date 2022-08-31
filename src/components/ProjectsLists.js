@@ -9,21 +9,21 @@ const ProjectsLists = () => {
 	
 	const GIT_REPOS_URL = `https://api.github.com/users/${username}/repos`;
 
-	const [repos, setRepos] = useState([]);
+	const [projects, setProjects] = useState([]);
 
 	useEffect(() => {
 		fetch(GIT_REPOS_URL)
         .then(resp => resp.json())
-        .then(data => setRepos(data))
+        .then(data => setProjects(data))
         .catch(error => console.log(error));
 	}, [GIT_REPOS_URL]);
 
   return(
-	<div>
-		{repos.map(repo => (
+	<div className="row">
+		{projects.map(project => (
 			<ProjectItem
-				key = {repo.id}
-				repo = {repo}
+				key = {project.id}
+				project = {project}
 			/>
 		))}
 	</div>
