@@ -4,7 +4,7 @@ import "../assets/css/App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // pages
 import ProjectListsPage from "../pages/ProjectListsPage";
-import ProjectDetailPage from "../pages/ProjectDetailPage";
+import ProjectCommitsPage from "../pages/ProjectCommitsPage";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
 			<Routes>
 				<Route path='/' element={<ProjectListsPage />} />
-        <Route path='/projects/:name' element={<ProjectDetailPage />} />
+        <Route path='/commits/:projectName' element={<ProjectCommitsPage />} />
 			</Routes>
 		</BrowserRouter>
   );
