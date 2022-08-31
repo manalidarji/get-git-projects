@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import ProjectCommitItem from './ProjectCommitItem';
+import ProjectCommitItem from '../Commits/ProjectCommitItem';
 
 const ProjectCommitsLists = (props) => {
     const projectName = props.name;

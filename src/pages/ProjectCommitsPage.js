@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import ProjectCommitsLists from "../components/ProjectCommitsLists";
+import ProjectCommitsLists from "../components/Commits/ProjectCommitsLists";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 
