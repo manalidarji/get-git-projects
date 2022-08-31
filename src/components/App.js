@@ -1,8 +1,16 @@
+import "../assets/css/App.css";
+import Footer from "./Footer";
+import Header from "./Header";
+
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <>
+      <Header />
+      <div id="main">
+        rest of the content
+      </div>
+      <Footer />
+    </>
   );
 }
 
