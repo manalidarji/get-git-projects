@@ -7,7 +7,7 @@ const ProjectsLists = () => {
 	// const username = 'fatemehabedin2';
 
 	
-	const GIT_REPOS_URL = `https://api.github.com/users/${username}/repos`;
+	const GIT_REPOS_URL = `https://api.github.com/users/${username}/repos?sort=created`;
 
 	const [projects, setProjects] = useState([]);
 
