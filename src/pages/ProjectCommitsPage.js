@@ -4,18 +4,18 @@ import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 
 const ProjectCommitsPage = () => {
-    const {projectName} = useParams();
+  const { username, projectName } = useParams();
   return (
     <>
       <Header />
       <div id="main">
         <div className="container">
-          <ProjectCommitsLists name={projectName}/>
+          <ProjectCommitsLists name={projectName} username={username} />
         </div>
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default ProjectCommitsPage
+export default ProjectCommitsPage;
